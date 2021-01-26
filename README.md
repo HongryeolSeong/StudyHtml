@@ -29,7 +29,7 @@ CSS 기본 학습
 
 > CSS is Cascading Style Sheets
 
-`테스트 `
+`테스트 코드`
 
 -----------------
 
