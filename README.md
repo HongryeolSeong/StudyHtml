@@ -35,6 +35,8 @@ namespace HelloWorldApp {
 }
 ```
 
+![실행결과](https://github.com/ghd0276/StudyHtml/blob/main/ref_images/console_result.png "실행결과")
+
 참조링크
 --------
 - [Microsoft](https://www.microsoft.com)
