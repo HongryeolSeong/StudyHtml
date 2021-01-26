@@ -23,8 +23,8 @@ HTML 기본 학습
     - SUL4
     
     
-- [ X ]학습하기
-- [ ]복습하기
+-  [X]학습하기
+-  [ ]복습하기
     
 ```java
 using System.IO;
