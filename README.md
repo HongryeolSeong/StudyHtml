@@ -43,6 +43,9 @@ namespace HelloWorldApp {
   }
 }
 ```
+
+![리트리버](https://story.holapet.com/wp-content/uploads/2019/04/golden-retriever-1554779815-1024x735.jpg)
+
 실행결과
 ![실행결과](https://github.com/ghd0276/StudyHtml/blob/main/ref_images/console_result.png "절대경로")
 
