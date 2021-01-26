@@ -21,14 +21,7 @@ HTML 기본 학습
   - UL3
     - SUL3
     - SUL4
-    
-__테스트__
-**테스트**
-_테스트_
-*테스트*
-~~테스트~~
-~테스트~
-    
+   
 
 * [X] 학습하기
 * [ ] 복습하기
@@ -60,8 +53,8 @@ namespace HelloWorldApp {
 
 참조링크
 --------
-- [Microsoft](https://www.microsoft.com)
-- [Naver](https://www.naver.com)
+- [Microsoft](https://www.microsoft.com "마이크로소프트")
+- [Naver](https://www.naver.com "네이버")
 
 -------------------
 
