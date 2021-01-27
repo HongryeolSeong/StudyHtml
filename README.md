@@ -65,10 +65,6 @@ namespace HelloWorldApp {
 ## CSS3
 CSS 기본 학습
 
-> CSS is Cascading Style Sheets
-
-`테스트 코드`
-
 -----------------
 
 ## Javascript
@@ -78,11 +74,9 @@ Javascript 기본 학습
 
 ## Responsive Web
 응답형 웹 기본 학습
-
 ----------------
 
 ## Project
 전체 통합 프로젝트
 
 ----------------------------
-문의메일 : <ghd0276@naver.com>
