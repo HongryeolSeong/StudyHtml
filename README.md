@@ -5,8 +5,9 @@ HTML5 CSS3, JS 학습용 리포지토리
 ## HTML5
 HTML 기본 학습
 
-### HTML이란?
-HTML 기본
+### HTML 기본학습
+[HTML소스](https://github.com/ghd0276/StudyHtml/tree/main/01_HTML)
+
 -------------------
 
 ## CSS3
@@ -21,6 +22,7 @@ Javascript 기본 학습
 
 ## Responsive Web
 응답형 웹 기본 학습
+
 ----------------
 
 ## Project
