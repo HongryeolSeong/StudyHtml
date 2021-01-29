@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>CSS3 Selector Page</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        #header {
+            width: 800px;
+            height: 300px;
+            margin: 0 auto;
+            background-color: cornflowerblue;
+        }
+
+        #wrap {
+            width: 800px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        #aside {
+            width: 300px;
+            float: right;
+            background-color: seagreen;
+        }
+
+        #content {
+            width: 500px;
+            float: left;
+            background-color: slateblue;
+        }
+
+        #footer {
+            width: 800px;
+            margin: 0 auto;
+        }
+
+        .fruits {
+            color: red;
+            font-weight: bold;
+        }
+
+        .item {
+            color: salmon;
+        }
+
+        .footer {
+            background-color: slateblue;
+        }
+        
+        input[type="text"] {
+            height: 30px;
+            background-color: red;
+            }
+        input[type="password"] {
+            height: 30px;
+            background-color: blue;
+            }
+
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1>#header 태그</h1>
+    </div>
+
+    <div id="wrap">
+        <div id="aside">
+            <h1>#aside 태그</h1>
+            <ul>
+                <li class="fruits"><a href="http://naver.com">사과</a></li>
+                <li><a href="http://microsoft.com">바나나</a></li>
+                <li><a href="http://youtube.com">배</a></li>
+                <li class="fruits"><a href="http://instargram.com">귤</a></li>
+            </ul>
+        </div>
+
+        <div id="content">
+            <h1>#content 태그</h1>
+            <form>
+                <input type="text">
+                <input type="password">
+            </form>
+        </div>
+    </div>
+
+    <div id="footer">
+        <h1 class="item footer">#footer 태그</h1>
+    </div>
+
+    
+</body>
+</html>
