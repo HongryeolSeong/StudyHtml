@@ -12,7 +12,7 @@ HTML 기본 학습
 -------------------
 
 ## CSS3
-CSS 기본 학습
+CSS 기본 학습<br>
 [CSS소스](https://github.com/ghd0276/StudyHtml/tree/main/02_CSS)
 
 -----------------
