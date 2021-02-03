@@ -27,7 +27,7 @@ Javascript 기본 학습
 
 #### 반응형 웹 그리드 레이아웃 웹페이지 실습
 
-![결과1](https://github.com/ghd0276/StudyHtml/blob/main/ref_images/result01.png "Result01")
+![결과1](https://github.com/ghd0276/StudyHtml/blob/main/ref_images/result01.png "전체 레이아웃")
 <br>
 <br>
-![결과2](https://github.com/ghd0276/StudyHtml/blob/main/ref_images/result02.png "Result02")
+![결과2](https://github.com/ghd0276/StudyHtml/blob/main/ref_images/result02.png "팝업 ")
