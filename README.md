@@ -32,3 +32,10 @@ Javascript 기본 학습<br>
 <br>
 <br>
 ![결과2](https://github.com/ghd0276/StudyHtml/blob/main/ref_images/result02.png "팝업 ")
+
+--------------------
+
+![결과1](https://github.com/ghd0276/StudyHtml/blob/main/ref_images/result03.png "애플폰 페이지")
+<br>
+<br>
+![결과2](https://github.com/ghd0276/StudyHtml/blob/main/ref_images/result04.png "삼성폰 페이지")
