@@ -29,4 +29,5 @@ Javascript 기본 학습
 
 ![결과1](https://github.com/ghd0276/StudyHtml/blob/main/ref_images/result01.png "Result01")
 <br>
+<br>
 ![결과2](https://github.com/ghd0276/StudyHtml/blob/main/ref_images/result02.png "Result02")
