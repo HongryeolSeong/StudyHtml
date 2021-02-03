@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Interest</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="css/init_m2.css">
+    <link rel="stylesheet" href="css/form_m.css">
+    <link rel="stylesheet" href="css/designes_m2.css">
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script>
+        // 로드 이벤트
+        $(document).ready(function () {
+            // 풀 다운 메뉴 적용
+           $(".outer-menu").hover(function () {
+               $(this).find(".inner-menu").css( 'display', 'block' );
+               $(this).find(".inner-menu2").css( 'display', 'block' );
+           }, function () {
+               $(this).find(".inner-menu").css( 'display', 'none' );
+               $(this).find(".inner-menu2").css( 'display', 'none' );
+           });
+
+           // 그리드 레이아웃 적용
+           $("#main-section").imagesLoaded(function () {
+               $("#main-section").masonry({
+               itemSelector: ".paper",
+               columnwidth: 28,
+               isAnimated: true
+               });
+           });
+
+           // 라이트박스
+           $(".paper").click(function() { showLightBox(this); });
+           $("#darken-background").click(function () { hideLightBox(); });
+           $("#lightbox").click(function (event) {
+               event.stopPropagation();
+           });
+           
+            function showLightBox(obj) {
+                var img_src = obj.getElementsByTagName("img")[0].src;
+                $("#random-image").attr({
+                    src: function() {
+                        var rnd_height = 80 + Math.floor(Math.random() * 100);
+                        return "https://placekitten.com/80/" + rnd_height;
+                    }
+                })
+                $("#darken-background").show();
+                $("#darken-background").css("top", $(window).scrollTop());
+                $("body").css('overflow', 'hidden');
+            }
+            
+            function hideLightBox() {
+                $("#darken-background").hide();
+                $("#darken-background").hide();
+                $("body").css('overflow', 'auto'); // 교안보다 정확한 코드
+            }
+        });
+    </script>
+</head>
+<body>
+    <header id="main-header">
+        <div class="header-search-form">
+            <form>
+                <input type="search" class="input-search">
+                <input type="submit" class="input-submit" value="검색">
+            </form>
+        </div>
+        <h1 class="header-title">Phone</h1>
+        <div class="header-menu">
+            <ul class="outer-menu">
+                <li>
+                    <a href="정보">정보</a>
+                    <ul class="inner-menu">
+                        <li><a href="https://github.com/ghd0276">https://github.com/ghd0276<a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="outer-menu">
+                <li>
+                    <a href="사용자">만든이</a>
+                    <ul class="inner-menu2">
+                        <li>ghd0276</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <nav id="main-navigation">
+        <ul>
+            <li><a href="index_modified.html">Apple<a></li>
+            <li><a href="index_modified2.html">SAMSUNG<a></li>
+        </ul>   
+    </nav>
+    <section id="main-section">
+        <!-- 페이퍼 여러번 복사할 것(나중에) -->
+        <div class="paper">
+            <div class="paper-holder">
+                <a><img width="190" src="https://upload.wikimedia.org/wikipedia/commons/d/dc/Samsung_Galaxy_S_White.png"></a>
+            </div>
+            <div class="paper-content">
+                <a class="paper-link" href="#">
+                    <img src="https://w7.pngwing.com/pngs/703/528/png-transparent-samsung-logo-samsung-galaxy-a8-2018-logo-samsung-electronics-arrow-sketch-company-text-label.png" width="50" height="20" >
+                </a>
+                <p class="paper-text">Galaxy S</p>
+            </div>
+        </div>
+        <!-- 페이퍼 끝 -->
+        <div class="paper">
+            <div class="paper-holder">
+                <a><img width="190" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Samsung_Galaxy_S_II.png/800px-Samsung_Galaxy_S_II.png"></a>
+            </div>
+            <div class="paper-content">
+                <a class="paper-link" href="#">
+                    <img src="https://w7.pngwing.com/pngs/703/528/png-transparent-samsung-logo-samsung-galaxy-a8-2018-logo-samsung-electronics-arrow-sketch-company-text-label.png" width="50" height="20" >
+                </a>
+                <p class="paper-text">Galaxy S2</p>
+            </div>
+        </div>
+        <div class="paper">
+            <div class="paper-holder">
+                <a><img width="190" src="https://t1.daumcdn.net/cfile/tistory/020E4F425112175D1A"></a>
+            </div>
+            <div class="paper-content">
+                <a class="paper-link" href="#">
+                    <img src="https://w7.pngwing.com/pngs/703/528/png-transparent-samsung-logo-samsung-galaxy-a8-2018-logo-samsung-electronics-arrow-sketch-company-text-label.png" width="50" height="20" >
+                </a>
+                <p class="paper-text">Galaxy S3</p>
+            </div>
+        </div>
+        <div class="paper">
+            <div class="paper-holder">
+                <a><img width="190" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Samsung_Galaxy_S4.svg/270px-Samsung_Galaxy_S4.svg.png"></a>
+            </div>
+            <div class="paper-content">
+                <a class="paper-link" href="#">
+                    <img src="https://w7.pngwing.com/pngs/703/528/png-transparent-samsung-logo-samsung-galaxy-a8-2018-logo-samsung-electronics-arrow-sketch-company-text-label.png" width="50" height="20" >
+                </a>
+                <p class="paper-text">Galaxy S4</p>
+            </div>
+        </div>
+        <div class="paper">
+            <div class="paper-holder">
+                <a><img width="190" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Samsung_Galaxy_S5.png/300px-Samsung_Galaxy_S5.png"></a>
+            </div>
+            <div class="paper-content">
+                <a class="paper-link" href="#">
+                    <img src="https://w7.pngwing.com/pngs/703/528/png-transparent-samsung-logo-samsung-galaxy-a8-2018-logo-samsung-electronics-arrow-sketch-company-text-label.png" width="50" height="20" >
+                </a>
+                <p class="paper-text">Galaxy S5</p>
+            </div>
+        </div>
+        <div class="paper">
+            <div class="paper-holder">
+                <a><img width="190" src="https://upload.wikimedia.org/wikipedia/commons/8/86/Samsung_Galaxy_S6_S6_Edge_and_S6_Edge_Plus.png"></a>
+            </div>
+            <div class="paper-content">
+                <a class="paper-link" href="#">
+                    <img src="https://w7.pngwing.com/pngs/703/528/png-transparent-samsung-logo-samsung-galaxy-a8-2018-logo-samsung-electronics-arrow-sketch-company-text-label.png" width="50" height="20" >
+                </a>
+                <p class="paper-text">Galaxy S6</p>
+            </div>
+        </div>
+        <div class="paper">
+            <div class="paper-holder">
+                <a><img width="190" src="https://upload.wikimedia.org/wikipedia/commons/0/03/Samsung_Galaxy_S7_and_S7_Edge.png"></a>
+            </div>
+            <div class="paper-content">
+                <a class="paper-link" href="#">
+                    <img src="https://w7.pngwing.com/pngs/703/528/png-transparent-samsung-logo-samsung-galaxy-a8-2018-logo-samsung-electronics-arrow-sketch-company-text-label.png" width="50" height="20" >
+                </a>
+                <p class="paper-text">Galaxy S7</p>
+            </div>
+        </div>
+        <div class="paper">
+            <div class="paper-holder">
+                <a><img width="190" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Samsung_Galaxy_S8.png/220px-Samsung_Galaxy_S8.png"></a>
+            </div>
+            <div class="paper-content">
+                <a class="paper-link" href="#">
+                    <img src="https://w7.pngwing.com/pngs/703/528/png-transparent-samsung-logo-samsung-galaxy-a8-2018-logo-samsung-electronics-arrow-sketch-company-text-label.png" width="50" height="20" >
+                </a>
+                <p class="paper-text">Galaxy S8</p>
+            </div>
+        </div>
+        <div class="paper">
+            <div class="paper-holder">
+                <a><img width="190" src="https://upload.wikimedia.org/wikipedia/commons/1/10/Samsung_Galaxy_S9_and_S9_Plus.png"></a>
+            </div>
+            <div class="paper-content">
+                <a class="paper-link" href="#">
+                    <img src="https://w7.pngwing.com/pngs/703/528/png-transparent-samsung-logo-samsung-galaxy-a8-2018-logo-samsung-electronics-arrow-sketch-company-text-label.png" width="50" height="20" >
+                </a>
+                <p class="paper-text">Galaxy S9</p>
+            </div>
+        </div>
+        <div class="paper">
+            <div class="paper-holder">
+                <a><img width="190" src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Samsung_Galaxy_S10%2B.png"></a>
+            </div>
+            <div class="paper-content">
+                <a class="paper-link" href="#">
+                    <img src="https://w7.pngwing.com/pngs/703/528/png-transparent-samsung-logo-samsung-galaxy-a8-2018-logo-samsung-electronics-arrow-sketch-company-text-label.png" width="50" height="20" >
+                </a>
+                <p class="paper-text">Galaxy S10</p>
+            </div>
+        </div>
+        <div class="paper">
+            <div class="paper-holder">
+                <a><img width="190" src="https://t1.daumcdn.net/cfile/tistory/99C41D4A5E2BA44A2B"></a>
+            </div>
+            <div class="paper-content">
+                <a class="paper-link" href="#">
+                    <img src="https://w7.pngwing.com/pngs/703/528/png-transparent-samsung-logo-samsung-galaxy-a8-2018-logo-samsung-electronics-arrow-sketch-company-text-label.png" width="50" height="20" >
+                </a>
+                <p class="paper-text">Galaxy S20</p>
+            </div>
+        </div>
+        <div class="paper">
+            <div class="paper-holder">
+                <a><img width="190" src="https://t1.daumcdn.net/cfile/tistory/99AC84495FDBEEAA0A"></a>
+            </div>
+            <div class="paper-content">
+                <a class="paper-link" href="#">
+                    <img src="https://w7.pngwing.com/pngs/703/528/png-transparent-samsung-logo-samsung-galaxy-a8-2018-logo-samsung-electronics-arrow-sketch-company-text-label.png" width="50" height="20" >
+                </a>
+                <p class="paper-text">Galaxy S21</p>
+            </div>
+        </div>
+    </section>
+    <div id="darken-background">
+        <div id="lightbox">
+            <div class="user-information">
+                <a class="user-information-images" href="$">
+                    <img src="https://w7.pngwing.com/pngs/703/528/png-transparent-samsung-logo-samsung-galaxy-a8-2018-logo-samsung-electronics-arrow-sketch-company-text-label.png" width="35px" height="50px" >
+                </a>
+                <div class="user-information-text">
+                    <h3>User</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium deserunt eligendi nam consequatur veritatis quia molestiae quos, minus in dolore earum tempora dolorum alias sunt accusantium repellendus blanditiis corrupti amet.</p>
+                </div>    
+            </div>
+                <hr class="lightbox-splitter">
+                <img id="random-image" src="https://placekitten.com/80/78">
+        </div>
+    </div>
+    <footer id="main-footer"></footer>
+</body>
+</html>
